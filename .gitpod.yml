@@ -1,0 +1,50 @@
+# Gitpod configuration for Playwright Automation
+image: gitpod/workspace-node
+
+# Expose ports for Playwright reports and debugging
+ports:
+  - port: 9323
+    onOpen: ignore
+    description: "Playwright Report Server"
+  - port: 3000
+    onOpen: ignore
+    description: "Development Server"
+
+# Tasks to run on workspace startup
+tasks:
+  - name: Setup Playwright
+    init: |
+      # Install dependencies
+      npm install
+
+      # Install Playwright browsers with dependencies for headless operation
+      npx playwright install --with-deps
+
+      # Install additional dependencies for Gitpod environment
+      sudo apt-get update
+      sudo apt-get install -y xvfb
+
+      echo "✅ Playwright setup completed!"
+      echo "🚀 Ready to run tests!"
+
+    command: |
+      echo "Playwright Automation Environment Ready!"
+      echo ""
+      echo "Available commands:"
+      echo "  npm run test           - Run all tests"
+      echo "  npm run test:headed    - Run tests in headed mode"
+      echo "  npm run test:debug     - Run tests in debug mode"
+      echo "  npm run test:report    - Show test report"
+      echo ""
+      echo "Example: Run specific test file:"
+      echo "  npx playwright test tests/form.spec.js"
+
+# VS Code extensions to install
+vscode:
+  extensions:
+    - ms-playwright.playwright
+    - bradlc.vscode-tailwindcss
+    - esbenp.prettier-vscode
+    - ms-vscode.vscode-json
+# Gitpod workspace configuration
+# Note: Prebuilds are now configured in Project Settings

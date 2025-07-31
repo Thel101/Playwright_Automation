@@ -1,0 +1,24 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report",
+    "test:codegen": "npx playwright codegen",
+    "install:browsers": "npx playwright install --with-deps",
+    "test:form": "npx playwright test tests/form.spec.js",
+    "test:sliders": "npx playwright test tests/sliders.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.1.0"
+  }
+}
