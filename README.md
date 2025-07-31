@@ -66,12 +66,12 @@ Before running the tests, ensure you have:
 ### 🌐 Gitpod Setup (Cloud Development)
 
 **Option 1: One-Click Setup**
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Thel101/Playwright_Automation)
 
 **Option 2: Manual Setup**
-1. **Prefix your GitHub URL with `gitpod.io/#`:**
+1. **Prefix GitHub URL with `gitpod.io/#`:**
    ```
-   https://gitpod.io/#https://github.com/your-username/Playwright_Automation
+   https://gitpod.io/#https://github.com/Thel101/Playwright_Automation
    ```
 
 2. **Wait for automatic setup** - Gitpod will:
